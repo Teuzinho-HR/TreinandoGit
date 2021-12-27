@@ -14,11 +14,11 @@ public class Main {
         for (n = 1; n <= 100; n++)
 
             if (n % 15 == 0)
-                System.out.println("FizzBuzz" + "");
+                System.out.println("FizzBuzz");
             else if (n % 3 == 0)
-                System.out.print("Fizz" + " ");
+                System.out.print("Fizz");
             else if (n % 5 == 0)
-                System.out.print("Buzz" + " ");
+                System.out.print("Buzz");
             else
                 System.out.print(n);
     }
@@ -27,13 +27,12 @@ public class Main {
         int totalStars = 0;
         for (String r : result) {
             if (r == "---") {
-                totalStars = 0;
             } else if (r == "--*") {
-                totalStars = 1;
+                totalStars += 1;
             } else if (r == "-**") {
-                totalStars = 2;
+                totalStars += 2;
             } else if (r == "***") {
-                totalStars = 3;
+                totalStars += 3;
             }
         }
         return totalStars;
